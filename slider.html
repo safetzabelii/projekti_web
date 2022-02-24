@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        header {
+            width: 100%;
+            height: 10%;
+            background: indigo;
+        }
+
+        main {
+
+            width: 100%;
+            height: 70%;
+        }
+
+        .slider {
+            width: 80%;
+            height: 80%;
+            margin-left: 10%;
+            overflow: hidden;
+        }
+
+        .images {
+            width: 400%;
+            height: 100%;
+
+
+        }
+
+        .buttons {
+            width: 80%;
+            height: 20%;
+            margin-left: 10%;
+
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .buttons label {
+            width: 40px;
+            height: 20px;
+            background: indigo;
+        }
+
+        .images img {
+            width: 25%;
+            height: 100%;
+            transition: 5s;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+
+    <main>
+
+        <div class="slider">
+
+            <div class="images">
+                <img src="Img/pht1.jpg" alt=""><img src="Img/pht2.jpg" alt=""><img src="Img/pht3.jpeg" alt=""><img
+                    src="Img/pht4.jpg" alt="">
+
+            </div>
+
+
+
+        </div>
+        <div class="buttons">
+
+            <label onclick="showFirstPht()"></label>
+            <label onclick="showSecondPht()"></label>
+            <label onclick="showThirdPht()"></label>
+            <label onclick="showFourthPht()"></label>
+        </div>
+
+    </main>
+
+
+    <script>
+        var pht1 = document.querySelector("img");
+
+        function showFirstPht() {
+            pht1.style.marginLeft = "0";
+        }
+        function showSecondPht() {
+            pht1.style.marginLeft = "-25%";
+        }
+        function showThirdPht() {
+            pht1.style.marginLeft = "-50%";
+        }
+        function showFourthPht() {
+            pht1.style.marginLeft = "-75%";
+        }
+    </script>
+</body>
+
+</html>
