@@ -6,7 +6,7 @@ include_once('link.php');
 <html>
 <head>
 	<style>
-		li{
+		.navnav{
 			text-align:center;
 			color: black;
     font-size: 20px;
@@ -20,11 +20,13 @@ include_once('link.php');
 <nav class="navbar navbar-default">
 	<div class="container-fluid">
 		<div class="navbar-header">
-			<a href="#" class="navbar-brand">Registration Login</a>
+			<br>
+			<br>
+
 		</div>
-		<ul class="nav navbar-nav">
+		<ul class="navnav">
 			<li><a href="registration.php">Registration</a></li>
-			<li><a href="login.php">Login</a></li>
+			<li><a  href="login.php">Login</a></li>
 		</ul>
 	</div>
 </nav>

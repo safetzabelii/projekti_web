@@ -238,8 +238,8 @@
 </section>
 
 <div class="btns">
-    <a href="movie.html">More Movies</a>
-    <a href="tvshow.html">More Tv Shows</a>
+    <a href="movie.php">More Movies</a>
+    <a href="tvshow.php">More Tv Shows</a>
 </div>
 
 <footer>

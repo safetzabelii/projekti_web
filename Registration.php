@@ -5,6 +5,9 @@ include_once('link.php');
 
 
 ?>
+<head>
+
+</head>
 <script type="text/JavaScript">
   
   const fname = document.getElementById('firstname')

@@ -3,16 +3,15 @@ Here, we write code for registration.
 -->
 <?php
 require_once('connection.php');
-$fname = $lname = $gender = $email = $password = $pwd = '';
+$fname = $lname = $email = $password = $pwd = '';
 
 $fname = $_POST['firstname'];
 $lname = $_POST['lastname'];
-$gender = $_POST['gender'];
 $email = $_POST['email'];
 $pwd = $_POST['password'];
 $password = MD5($pwd);
 
-$sql = "INSERT INTO projektiweb (Firstname,Lastname,Gender,Email,Password) VALUES ('$fname','$lname','$gender','$email','$password')";
+$sql = "INSERT INTO projektiweb (Firstname,Lastname,Email,Password) VALUES ('$fname','$lname','$email','$password')";
 $result = mysqli_query($conn, $sql);
 if($result)
 {
